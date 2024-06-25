@@ -1,0 +1,22 @@
+package com.javaweb.api;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class BuildingAPI {
+    @RequestMapping(value="/api/building", method = RequestMethod.GET)
+    public void getBuilding(@RequestParam(value="name") String name) {
+        System.out.print(name);
+    }
+    @RequestMapping(value="/api/building", method = RequestMethod.POST)
+    public void getBuilding2(@RequestParam Map<String,String> params)
+    {
+    	System.out.print("oke");
+    }
+    
+}
