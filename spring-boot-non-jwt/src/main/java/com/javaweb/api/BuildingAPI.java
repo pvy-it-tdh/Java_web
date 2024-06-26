@@ -9,11 +9,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.javaweb.dto.BuildingDTO;
+
 @RestController
 public class BuildingAPI {
     @GetMapping(value="/api/building")
-    public void getBuilding(@RequestParam(value="name") String name) {
-        System.out.print(name);
+    public Object getBuilding(@RequestParam(value="name") String name) {
+        BuildingDTO building = new BuildingDTO();
+        try {}
+        catch(Exception e) {}
+        building.setName(name);
+        return building;
     }
     @PostMapping(value="/api/building")
     public void getBuilding2(@RequestParam Map<String,String> params)
