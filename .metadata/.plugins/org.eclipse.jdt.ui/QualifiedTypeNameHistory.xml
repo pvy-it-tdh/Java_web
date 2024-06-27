@@ -13,4 +13,6 @@
     <fullyQualifiedTypeName name="com.javaweb.api.BuildingAPI"/>
     <fullyQualifiedTypeName name="com.javaweb.dto.BuildingDTO"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.javaweb.dto.ErrorDTO"/>
 </qualifiedTypeNameHistroy>
