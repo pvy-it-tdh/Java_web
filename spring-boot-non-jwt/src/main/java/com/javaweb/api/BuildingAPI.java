@@ -5,14 +5,14 @@ import org.springframework.web.bind.annotation.*;
 import com.javaweb.dto.BuildingDTO;
 import com.javaweb.dto.ErrorDTO;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
 public class BuildingAPI {
 
     @PostMapping(value = "/api/building")
-    public Object getBuilding(@RequestBody BuildingDTO building) {
-        System.out.print(15/0);
+    public List<BuildingDTO> getBuilding(@RequestBody BuildingDTO building) {
         return null;
 
     }
